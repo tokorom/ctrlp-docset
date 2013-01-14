@@ -1,3 +1,9 @@
+" =============================================================================
+" File: autoload/ctrlp/docset.vim
+" Description: This is extension plugin for CtrlP
+" Author: tokorom <github.com/tokorom>
+" =============================================================================
+
 if exists('g:loaded_ctrlp_docset') && g:loaded_ctrlp_docset
   finish
 endif
@@ -20,21 +26,25 @@ else
   let g:ctrlp_ext_vars = [s:docset_var]
 endif
 
+" Options {{{1
+
 if !exists('g:ctrlp_docset_docsetutil_command')
   let g:ctrlp_docset_docsetutil_command = 'docsetutil'
 endif
 
-if !exists('g:ctrlp_docset_search_option')
-  let g:ctrlp_docset_search_option = '-query "*" -skip-text'
+if !exists('g:ctrlp_docset_filepaths')
+  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.0.iOSLibrary.docset'}
 endif
 
 if !exists('g:ctrlp_docset_accept_command')
   let g:ctrlp_docset_accept_command = ':!open "file://%s"'
 endif
 
-if !exists('g:ctrlp_docset_filepaths')
-  let g:ctrlp_docset_filepaths = {}
+if !exists('g:ctrlp_docset_search_option')
+  let g:ctrlp_docset_search_option = '-query "*" -skip-text'
 endif
+
+" ctrlp functions {{{1
 
 function! ctrlp#docset#enter()
   let s:filetype = &filetype
@@ -80,7 +90,6 @@ let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)
 function! ctrlp#docset#id()
   return s:id
 endfunction
-
 
 " Private function {{{1
 

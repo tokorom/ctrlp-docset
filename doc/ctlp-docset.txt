@@ -1,0 +1,55 @@
+*ctrlp-docset.txt* ctrlp-docset
+
+-------------------------------------------------------
+CtrlP Docset Extension
+-------------------------------------------------------
+Copyright: (c) tokorom <http://www.tokoro.me/>
+Repository: http://github.com/tokorom/ctrlp-docset
+License: BSD style license
+
+==============================================================================
+CONTENTS *ctrlp-docset-contents*
+
+    1. Intro........................................|ctrlp-docset-intro|
+    2. Options......................................|ctrlp-docset-options|
+    3. Commands.....................................|ctrlp-docset-commands|
+
+===============================================================================
+INTRO *ctrlp-docset-intro*
+
+Docset finder with an intuitive interface. 
+This is extension plugin for CtrlP -> http://kien.github.com/ctrlp.vim
+
+===============================================================================
+OPTIONS *ctrlp-docset-options*
+
+                                          *'g:ctrlp_docset_docsetutil_command'*
+Set the docsetutil command: >
+  let g:ctrlp_docset_docsetutil_command = 'docsetutil'
+<
+
+                                                   *'g:ctrlp_docset_filepaths'*
+Set the docset filepath each filetype: >
+  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.0.iOSLibrary.docset'}
+<
+
+                                              *'g:ctrlp_docset_accept_command'*
+Set the command for opening the selected file: >
+  let g:ctrlp_docset_accept_command = ':!open "file://%s"'
+<
+
+
+                                              *'g:ctrlp_docset_search_option'*
+Set the docset search command options: >
+  let g:ctrlp_docset_search_option = '-query "*" -skip-text'
+<
+
+===============================================================================
+COMMANDS *ctrlp-docset-commands*
+
+                                                                 *:CtrlPDocset*
+:CtrlPDocset
+   Open CtrlP in search docset mode.
+
+===============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
