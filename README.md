@@ -36,7 +36,7 @@ let g:ctrlp_docset_docsetutil_command = '/Applications/Xcode.app/Contents/Develo
 Set the docset filepath each filetype:
 
 ```sh
-let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.0.iOSLibrary.docset'}
+let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.1.iOSLibrary.docset'}
 ```
 
 Set the command for opening the selected file:

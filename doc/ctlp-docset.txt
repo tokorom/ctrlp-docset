@@ -30,7 +30,7 @@ Set the docsetutil command: >
 
                                                    *'g:ctrlp_docset_filepaths'*
 Set the docset filepath each filetype: >
-  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.0.iOSLibrary.docset'}
+  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.1.iOSLibrary.docset'}
 <
 
                                               *'g:ctrlp_docset_accept_command'*

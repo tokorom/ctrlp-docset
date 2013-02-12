@@ -33,7 +33,7 @@ if !exists('g:ctrlp_docset_docsetutil_command')
 endif
 
 if !exists('g:ctrlp_docset_filepaths')
-  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.0.iOSLibrary.docset'}
+  let g:ctrlp_docset_filepaths = {'objc': '~/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleiOS6.1.iOSLibrary.docset'}
 endif
 
 if !exists('g:ctrlp_docset_accept_command')
